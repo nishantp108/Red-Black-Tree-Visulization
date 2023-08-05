@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red-Black Tree Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/sigma@1.2.1/build/sigma.min.js"></script>
+  <style>
+
+    #graph-container{
+      /* border: 2px black; */
+      height:400px;
+      width: 1000px;
+      margin-top: 50px;
+    }
+    #take{
+      font-size: 25px;
+      color: blue;
+      margin-top: 20px;
+      margin-left: 100px;
+    }
+    #txtInput{
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"> Red-Black Tree Visualization Using Model 1  </a>
+</nav>
+  <input type="text" id="txtInput">
+  <button type="button"  onclick="insertBtn()">Insert</button>
+  <input type="text" id="txtInput1">
+  <button type="button" onclick="deleteBtn()">Delete</button>
+  <input type="text" id="txtInput2">
+  <button type="button"  onclick="findBtn()">Find</button>
+  <div id="graph-container"></div>
+  <label id = "take"></label>
+  <script src="my.js"></script>
+  <script src="red_black (1).js"></script>
+</body>
+</html>
